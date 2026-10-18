@@ -1,0 +1,30 @@
+{
+  "name": "udf-toolkit-js",
+  "version": "1.0.0",
+  "description": "JavaScript rewrite of UDF Toolkit (docx/udf/pdf conversions)",
+  "type": "module",
+  "bin": {
+    "docx-to-udf": "./bin/docx_to_udf.js",
+    "udf-to-docx": "./bin/udf_to_docx.js",
+    "udf-to-pdf": "./bin/udf_to_pdf.js",
+    "scanned-pdf-to-udf": "./bin/scanned_pdf_to_udf.js"
+  },
+  "scripts": {
+    "docx-to-udf": "node bin/docx_to_udf.js",
+    "udf-to-docx": "node bin/udf_to_docx.js",
+    "udf-to-pdf": "node bin/udf_to_pdf.js",
+    "scanned-pdf-to-udf": "node bin/scanned_pdf_to_udf.js"
+  },
+  "dependencies": {
+    "@xmldom/xmldom": "^0.9.12",
+    "adm-zip": "^0.5.16",
+    "canvas": "^3.0.0",
+    "docx": "^9.0.0",
+    "fast-xml-parser": "^4.5.0",
+    "jszip": "^3.10.1",
+    "pdfjs-dist": "^4.0.0",
+    "pdfkit": "^0.15.0",
+    "pdfkit-table": "^0.2.11",
+    "sharp": "^0.33.0"
+  }
+}
